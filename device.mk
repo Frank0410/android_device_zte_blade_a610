@@ -28,50 +28,50 @@ TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
 # default.prop
-ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.secure=0 \
-    ro.allow.mock.location=1 \
-    ro.debuggable=1 \
-    ro.adb.secure=0 \
-    persist.service.acm.enable=0 \
-    persist.sys.usb.config=mtp \
-    ro.mount.fs=EXT4 \
-    camera.disable_zsl_mode=1 \
-    persist.sys.display.clearMotion=0 
+#ADDITIONAL_DEFAULT_PROPERTIES += \
+ #   ro.secure=0 \
+  #  ro.allow.mock.location=1 \
+   # ro.debuggable=1 \
+    #ro.adb.secure=0 \
+    #persist.service.acm.enable=0 \
+    #persist.sys.usb.config=mtp \
+    #ro.mount.fs=EXT4 \
+    #camera.disable_zsl_mode=1 \
+    #persist.sys.display.clearMotion=0 
 
 # build.prop
-PRODUCT_PROPERTY_OVERRIDES += \
-    media.stagefright.legacyencoder=true \
-    media.stagefright.less-secure=true \
-    persist.service.adb.enable=1 \
-    persist.service.debuggable=1 \
-    persist.sys.root_access=0 \
-    ro.sys.fw.bg_apps_limits=5
+#PRODUCT_PROPERTY_OVERRIDES += \
+ #   media.stagefright.legacyencoder=true \
+  #  media.stagefright.less-secure=true \
+   # persist.service.adb.enable=1 \
+   # persist.service.debuggable=1 \
+    #persist.sys.root_access=0 \
+    #ro.sys.fw.bg_apps_limits=5
 
 # Log control prop
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.ril.log=0 \
-    ro.disable.xlog=0
+#PRODUCT_PROPERTY_OVERRIDES += \
+    #persist.ril.log=0 \
+    #ro.disable.xlog=0
 
 # VM memory overrides
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapstartsize=8m \
-    dalvik.vm.heapgrowthlimit=288m \
-    dalvik.vm.heapsize=768m \
-    dalvik.vm.heaptargetutilization=0.75 \
-    dalvik.vm.heapminfree=512k \
-    dalvik.vm.heapmaxfree=8m \
-    ro.hwui.texture_cache_size=72 \
-    ro.hwui.layer_cache_size=48 \
-    ro.hwui.path_cache_size=32 \
-    ro.hwui.gradient_cache_size=1 \
-    ro.hwui.drop_shadow_cache_size=6 \
-    ro.hwui.r_buffer_cache_size=8 \
-    ro.hwui.texture_cache_flushrate=0.4 \
-    ro.hwui.text_small_cache_width=1024 \
-    ro.hwui.text_small_cache_height=1024 \
-    ro.hwui.text_large_cache_width=2048 \
-    ro.hwui.text_large_cache_height=1024
+#PRODUCT_PROPERTY_OVERRIDES += \
+ #   dalvik.vm.heapstartsize=8m \
+  #  dalvik.vm.heapgrowthlimit=288m \
+   # dalvik.vm.heapsize=768m \
+    #dalvik.vm.heaptargetutilization=0.75 \
+#    dalvik.vm.heapminfree=512k \
+ #   dalvik.vm.heapmaxfree=8m \
+  #  ro.hwui.texture_cache_size=72 \
+   # ro.hwui.layer_cache_size=48 \
+    #ro.hwui.path_cache_size=32 \
+#    ro.hwui.gradient_cache_size=1 \
+ #   ro.hwui.drop_shadow_cache_size=6 \
+  #  ro.hwui.r_buffer_cache_size=8 \
+   # ro.hwui.texture_cache_flushrate=0.4 \
+    #ro.hwui.text_small_cache_width=1024 \
+#    ro.hwui.text_small_cache_height=1024 \
+ #   ro.hwui.text_large_cache_width=2048 \
+  #  ro.hwui.text_large_cache_height=1024
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -328,5 +328,5 @@ PRODUCT_PACKAGES += \
     Stk
 
 # GPS force mode
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.force.gps.mode=gnss
+#PRODUCT_PROPERTY_OVERRIDES += \
+ #   persist.force.gps.mode=gnss
